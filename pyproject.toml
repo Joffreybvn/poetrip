@@ -9,13 +9,18 @@ repository = "https://github.com/joffreybvn/poetrip"
 homepage = "https://github.com/joffreybvn/poetrip"
 keywords = ['packaging', 'poetry', 'pipenv', 'pipfile']
 
+[tool.poetry.scripts]
+poetrip = "poetrip.main:app"
+
 [tool.poetry.dependencies]
 python = "^3.6"
+typer = "^0.6.1"
 toml = "^0.9"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.0"
 pytest-cov = "^2.4"
 
-[tool.poetry.scripts]
-my-script = 'my_package:main'
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
