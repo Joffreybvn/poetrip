@@ -672,3 +672,4 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+!/notebooks/Pipfile
