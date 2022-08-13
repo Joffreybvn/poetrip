@@ -7,7 +7,31 @@
 
 Generate Pipfile from pyproject.toml.
 
-## TODO:
-- [x] Basic PyProject to Pipfile conversion
-- [x] Fix scripts appearing in Pipfile
-- [ ] Refactor structure and implement Pipfile to pyproject
+## Installation
+Poetrip requires Python 3.6 or greater.
+
+Using **pip**:
+```Shell
+pip install poetrip
+```
+
+Using **poetry**:
+```shell
+poetry add --dev poetrip
+```
+
+## CLI Quickstart
+TODO
+
+## API Quickstart
+Get a Pipfile from a pyproject.toml:
+```python
+from poetrip import PyProject
+
+# Load and transform
+pyproject = PyProject.from_file("./pyproject.toml")
+pipfile = pyproject.to_pipfile()
+
+# Write to disk
+pipfile.to_file("./Pipfile")
+```
