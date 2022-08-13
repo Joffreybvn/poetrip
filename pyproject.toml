@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "poetrip"
-version = "0.1.0"
+version = "1.0.0"
 description = "Generate Pipfile from pyproject.toml"
 license = "MIT"
 authors = ["Joffrey Bienvenu <joffreybvn@gmail.com>"]
