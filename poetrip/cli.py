@@ -1,16 +1,15 @@
 import typer
+from poetrip import PyProject
 
-app = typer.Typer()
-
-
-@app.command()
-def hello(name: str):
-    print(f"Hello {name}")
+app = typer.Typer(add_completion=False)
 
 
 @app.command()
-def goodbye(name: str, formal: bool = False):
-    if formal:
-        print(f"Goodbye Ms. {name}. Have a good day.")
-    else:
-        print(f"Bye {name}!")
+def pipfile(
+        pyproject_file: str = typer.Option('pyproject.toml', "--from", "-f"),
+        pipfile_file: str = typer.Option("Pipfile", "--to", "-t")
+):
+    pyproject = PyProject.from_file(pyproject_file)
+    pipfile = pyproject.to_pipfile()
+
+    pipfile.to_file(pipfile_file)

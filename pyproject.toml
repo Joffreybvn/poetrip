@@ -9,8 +9,8 @@ repository = "https://github.com/joffreybvn/poetrip"
 homepage = "https://github.com/joffreybvn/poetrip"
 keywords = ['packaging', 'poetry', 'pipenv', 'pipfile']
 
-#[tool.poetry.scripts]
-#poetrip = "poetrip.cli:app"
+[tool.poetry.scripts]
+poetrip = "poetrip.cli:app"
 
 [tool.poetry.dependencies]
 python = "^3.6"

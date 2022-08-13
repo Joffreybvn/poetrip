@@ -1,11 +1,29 @@
 
-# Poetrip
+<h1 align="center">Poetrip</h1>
+<p align="center">
+    <em>Generate Pipfile from pyproject.toml.</em>
+</p>
+<p align="center">
+    <a href="https://pypi.org/project/poetrip/" target="_blank">
+        <img src="https://img.shields.io/pypi/v/poetrip.svg" alt="Version">
+    </a>
+    <a href="https://pypi.org/project/poetrip/" target="_blank">
+        <img src="https://img.shields.io/pypi/l/poetrip.svg" alt="License">
+    </a>
+    <a href="https://pypi.org/project/poetrip/" target="_blank">
+        <img src="https://img.shields.io/pypi/pyversions/poetrip.svg" alt="Python">
+    </a>
+</p>
 
-[![image](https://img.shields.io/pypi/v/poetrip.svg)](https://pypi.org/project/poetrip/)
-[![image](https://img.shields.io/pypi/l/poetrip.svg)](https://pypi.org/project/poetrip/)
-[![image](https://img.shields.io/pypi/pyversions/poetrip.svg)](https://pypi.org/project/poetrip/)
+---
 
-Generate Pipfile from pyproject.toml.
+**Source Code**: [https://github.com/Joffreybvn/poetrip](https://github.com/Joffreybvn/poetrip)
+
+**Pypi**: [https://pypi.org/project/poetrip/](https://pypi.org/project/poetrip/)
+
+---
+
+Poetrip is a small library and CLI to quickly create Pipfile from existing pyproject.toml.
 
 ## Installation
 Poetrip requires Python 3.6 or greater.
@@ -21,7 +39,16 @@ poetry add --dev poetrip
 ```
 
 ## CLI Quickstart
-TODO
+Get a Pipfile from a pyproject.toml:
+```shell
+$ poetrip --from pyproject.toml --to Pipfile
+```
+
+Or simply:
+```shell
+$ poetrip
+```
+Takes the pyproject.toml in the current folder and generate a Pipfile.
 
 ## API Quickstart
 Get a Pipfile from a pyproject.toml:
