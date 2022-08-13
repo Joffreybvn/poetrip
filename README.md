@@ -1,7 +1,7 @@
 
-<p align="center">
-  <img src="./docs/logo.svg" alt="Poetrip">
-</p>
+![Poetrip](./docs/logo_light.svg#gh-light-mode-only)
+![Poetrip](./docs/logo_dark.svg#gh-dark-mode-only)
+
 <p align="center">
     <em>Generate Pipfile from pyproject.toml.</em>
 </p>
