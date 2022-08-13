@@ -1,5 +1,7 @@
 
-<h1 align="center">Poetrip</h1>
+<p align="center">
+  <img src="./docs/logo.svg" alt="Poetrip">
+</p>
 <p align="center">
     <em>Generate Pipfile from pyproject.toml.</em>
 </p>
