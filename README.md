@@ -1,6 +1,10 @@
 
 # Poetrip
 
+[![image](https://img.shields.io/pypi/v/poetrip.svg)](https://pypi.org/project/poetrip/)
+[![image](https://img.shields.io/pypi/l/poetrip.svg)](https://pypi.org/project/poetrip/)
+[![image](https://img.shields.io/pypi/pyversions/poetrip.svg)](https://pypi.org/project/poetrip/)
+
 Generate Pipfile from pyproject.toml.
 
 ## TODO:
