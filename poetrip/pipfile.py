@@ -4,6 +4,12 @@ from typing import Dict, Any
 
 class PipFile:
 
+    _SOURCE_DEFAULT: Dict[str, str] = {
+        "url": "https://pypi.org/simple",
+        "verify_ssl": True,
+        "name": "pypi"
+    }
+
     def __init__(
             self,
             source: dict = None,
@@ -11,7 +17,7 @@ class PipFile:
             packages: dict = None,
             dev_packages: dict = None
     ):
-        self._source: dict = source or {}
+        self._source: dict = source or self._SOURCE_DEFAULT
         self._requires: dict = requires or {}
         self._packages: dict = packages or {}
         self._dev_packages: dict = dev_packages or {}

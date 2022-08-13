@@ -41,7 +41,6 @@ class PyProject:
 
     def to_pipfile(self) -> 'PipFile':
         return PipFile(
-            source=self._infos,
             requires=self._get_requires(),
             packages=self._dependencies,
             dev_packages=self._dev_dependencies
