@@ -1,6 +1,5 @@
 
-![Poetrip](./docs/logo_light.svg#gh-light-mode-only)
-![Poetrip](./docs/logo_dark.svg#gh-dark-mode-only)
+![Poetrip](./docs/logo_dark.svg)
 
 <p align="center">
     <em>Generate Pipfile from pyproject.toml.</em>
